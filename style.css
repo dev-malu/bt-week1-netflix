@@ -9,12 +9,12 @@
     --main-spacing: 50px;
 }
 body {
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     color: var(--color);
     font-family: 'Roboto';
-    background: url('./assets/AAAABbmDqmALVxFERO3HsNXBfM2_e05IqxfclPLbCmEVBqmkAtZarOkXzn5Hk-55rBTBZXhNxiVaPODldXP2p4pAHDHM5bpg3ZSd_W3K.webp');
+    background-image: url('./assets/AAAABbmDqmALVxFERO3HsNXBfM2_e05IqxfclPLbCmEVBqmkAtZarOkXzn5Hk-55rBTBZXhNxiVaPODldXP2p4pAHDHM5bpg3ZSd_W3K.webp');
     background-repeat: no-repeat; 
-    background-size: cover;  ;
+    background-size: 100%;
 }
 .background {
     /* background-image: linear-gradient(0deg,rgba(200, 191, 191, 0.86),rgba(179, 174, 174, 0.856),url('./assets/AAAABbmDqmALVxFERO3HsNXBfM2_e05IqxfclPLbCmEVBqmkAtZarOkXzn5Hk-55rBTBZXhNxiVaPODldXP2p4pAHDHM5bpg3ZSd_W3K.webp')); */
@@ -84,4 +84,73 @@ body {
 .buttons .more-info {
     background: grey;
     color:var(--color);
+}
+.my-list {
+    margin-top: 40px;
+    background: linear-gradient(transparent,#000000);
+    padding-left: var(--main-spacing);
+    max-width: 100vw;
+    overflow: hidden;
+}
+.other-list {
+    margin-top: 40px;
+    background: #000000;
+    padding-left: var(--main-spacing);
+    max-width: 100vw;
+    overflow: hidden;
+}
+.section-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-list {
+    margin-bottom: 30px;
+    position: relative;
+}
+section img {
+    height: 140px;
+    width: 220px ;
+    border-radius: 6px;
+}
+
+.popular {
+    position: relative;
+}
+.popular img {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 140px;
+}
+.popular .trending-num {
+    width: 200px;
+    font-size: 11rem;
+    color: #000000;
+    text-shadow: 0 0 4px #ffffff;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+.gap-popular {
+    gap: 20px;
+}
+
+.arrow {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.arrow img {
+    width: 50px;
+}
+.arrow.right-arrow {
+    right: 0;
+}
+
+.card-list:hover .arrow {
+    opacity: 1;
 }
